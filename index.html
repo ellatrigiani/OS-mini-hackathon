@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Should I Do in London Right Now?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1 class="main-title">What should I do in London right now?</h1>
+      <p class="subtitle">Press the button. London decides.</p>
+    </header>
+
+    <div class="controls-section">
+      <!-- Mode Selector -->
+      <div class="mode-selector" role="group" aria-label="Activity mode">
+        <button class="mode-pill chill active" data-mode="chill" aria-label="Chill mode, press 1">
+          <span class="mode-icon">☕</span>
+          <span class="mode-text">Chill</span>
+        </button>
+        <button class="mode-pill adventurous" data-mode="adventurous" aria-label="Adventurous mode, press 2">
+          <span class="mode-icon">🚶‍♂️</span>
+          <span class="mode-text">Adventurous</span>
+        </button>
+        <button class="mode-pill culture" data-mode="culture" aria-label="Culture mode, press 3">
+          <span class="mode-icon">🏛️</span>
+          <span class="mode-text">Culture</span>
+        </button>
+      </div>
+
+      <!-- Main Action Button -->
+      <button id="generateBtn" class="generate-btn">GIVE ME A PLAN</button>
+
+      <!-- Output Card -->
+      <div id="outputCard" class="output-card" aria-live="polite" aria-atomic="true">
+        <div class="card-content"></div>
+      </div>
+
+      <!-- Confetti Container -->
+      <div id="confetti" class="confetti-container"></div>
+    </div>
+
+    <footer class="footer">
+      <p>Built for vibes. Powered by London.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
